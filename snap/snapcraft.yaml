@@ -8,7 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   magicraminstaller:
-    command: ram.py
+    command: python ram.py
     plugs:
       - home
      

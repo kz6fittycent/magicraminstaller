@@ -1,0 +1,26 @@
+name: magicraminstaller # check to see if it's available
+version: '1.0' 
+summary: Install RAM with this script! # 79 char long summary
+description: |
+  This magical script will install more RAM on your machine (THIS IS A JOKE).
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs
+
+apps:
+  magicraminstaller:
+    command: ram.py
+    plugs:
+      - home
+     
+parts: 
+  my-part:
+    source: https://github.com/kz6fittycent/magicraminstaller
+    source-type: git
+    plugin: python
+    python-version: python3
+    
+    build-packages:
+      - python3
+      
+    stage-packages:
+      - python3

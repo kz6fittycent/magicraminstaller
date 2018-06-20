@@ -8,7 +8,7 @@ confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   magicraminstaller:
-    command: usr/bin/python3 $SNAP/ram.py
+    command: python3 $SNAP/ram.py
     plugs:
       - home
      
@@ -24,3 +24,8 @@ parts:
       
     stage-packages:
       - python3
+
+  publish:
+    plugin: copy
+    files:
+      ./ram.py: bin/ram.py

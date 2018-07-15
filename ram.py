@@ -23,7 +23,7 @@ def main():
     print()
     print("Getting System Information...")
     print()
-    time.sleep(15.0)
+    time.sleep(5.0)
     print("Installing RAM Now...")
     print()
 
@@ -39,10 +39,5 @@ def main():
           time.sleep(2.0)
           print("PLEASE REBOOT TO MAKE CHANGES PERMANENT")
           print()
-            print (50 * '#')
-            print (50 * '-')
-            print ("    THANK YOU FOR USING MAGIC RAM INSTALLER")
-            print (50 * '-')
-            print (50 * '#')
           
 main()

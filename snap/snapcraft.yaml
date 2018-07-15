@@ -1,5 +1,5 @@
 name: magicraminstaller # check to see if it's available
-version: '1.0.1' 
+version: '1.1' 
 summary: Install RAM with this script! # 79 char long summary
 description: |
   This magical script will install more RAM on your machine (THIS IS A JOKE).

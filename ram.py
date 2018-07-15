@@ -11,7 +11,7 @@ print ("         WELCOME TO MAGIC RAM INSTALLER")
 print (50 * '-')
 print (50 * '#')
 time.sleep(1)
-print ("MIT License, v. 1.0")
+print ("MIT License, v. 1.1")
 time.sleep(1)
 print()
 
@@ -23,19 +23,26 @@ def main():
     print()
     print("Getting System Information...")
     print()
-    time.sleep(.5)
+    time.sleep(15.0)
     print("Installing RAM Now...")
     print()
 
     while time.time() < t_end:
           sys.stdout.write(next(spinner))  # write the next character
           sys.stdout.flush()               # flush stdout buffer (actual character display)
-          time.sleep(0.4)
+          time.sleep(1.0)
           sys.stdout.write('\b') 
             
     else:
           print("Installation Complete!")
           print()
-          time.sleep(1.0)
+          time.sleep(2.0)
           print("PLEASE REBOOT TO MAKE CHANGES PERMANENT")
+          print()
+          print (50 * '#')
+          print (50 * '-')
+          print (" THANK YOU FOR USING MAGIC RAM INSTALLER")
+          print (50 * '-')
+          print (50 * '#')
+          
 main()

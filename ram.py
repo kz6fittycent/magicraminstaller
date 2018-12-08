@@ -11,7 +11,7 @@ print ("         WELCOME TO MAGIC RAM INSTALLER")
 print (50 * '-')
 print (50 * '#')
 time.sleep(1)
-print ("MIT License, v. 1.1")
+print ("MIT License, v. 1.2")
 time.sleep(1)
 print()
 
@@ -21,9 +21,11 @@ def main():
     t_end = time.time() + 15
     ram = str(input("Enter the amount of RAM you want to install:  "))
     print()
-    print("Getting System Information...")
+    print("Gathering System Information...")
     print()
     time.sleep(5.0)
+    print("Wow...your photos are...interesting...")
+    time.sleep(3.0)
     print("Installing RAM Now...")
     print()
 
@@ -38,6 +40,8 @@ def main():
           print()
           time.sleep(2.0)
           print("PLEASE REBOOT TO MAKE CHANGES PERMANENT")
+          time.sleep(2.0)
+          print("You may want to hide those photos in the future")
+          time.sleep(2.0)
           print()
-          
 main()

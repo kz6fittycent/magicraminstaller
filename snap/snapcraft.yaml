@@ -1,5 +1,5 @@
 name: magicraminstaller # check to see if it's available
-adopt-info: get-version
+version: 1.2
 summary: Install RAM with this script! # 79 char long summary
 description: |
   This magical script will install more RAM on your machine (THIS IS A JOKE).

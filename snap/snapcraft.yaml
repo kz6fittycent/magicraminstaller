@@ -1,5 +1,5 @@
 name: magicraminstaller 
-version: git
+adopt-info: magicraminstaller
 summary: Install RAM with this script!
 description: |
   This magical script will install more RAM on your machine (THIS IS A JOKE).
@@ -20,6 +20,10 @@ parts:
     source-type: git
     plugin: python
     python-version: python3
+    
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"    
     
     build-packages:
       - python3

@@ -29,6 +29,6 @@ parts:
 
   publish:
     plugin: dump
-    fsource: .
+    source: .
     organize:
       ./ram.py: bin/ram.py

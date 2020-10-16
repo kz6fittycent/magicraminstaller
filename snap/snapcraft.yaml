@@ -1,14 +1,14 @@
-name: magicraminstaller # check to see if it's available
+name: magicraminstaller 
 version: git
-summary: Install RAM with this script! # 79 char long summary
+summary: Install RAM with this script!
 description: |
   This magical script will install more RAM on your machine (THIS IS A JOKE).
 
 license: MIT
 
 base: core18
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs
+grade: stable 
+confinement: strict 
 
 apps:
   magicraminstaller:

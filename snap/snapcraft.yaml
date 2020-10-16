@@ -3,14 +3,16 @@ version: git
 summary: Install RAM with this script! # 79 char long summary
 description: |
   This magical script will install more RAM on your machine (THIS IS A JOKE).
+
+license: MIT
+
+base: core18
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs
 
 apps:
   magicraminstaller:
     command: python3 $SNAP/bin/ram.py
-    plugs:
-      - home
      
 parts: 
   magicraminstaller:
@@ -26,6 +28,7 @@ parts:
       - python3
 
   publish:
-    plugin: copy
-    files:
+    plugin: dump
+    fsource: .
+    organize:
       ./ram.py: bin/ram.py

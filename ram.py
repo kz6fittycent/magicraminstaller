@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 
+#IMPORTS
+#######################################################
 import sys
 import time
 import threading
 import itertools
+import os
+#######################################################
+
+os.system('clear')
 
 print (50 * '#')
 print (50 * '-')
@@ -11,10 +17,10 @@ print ("         WELCOME TO MAGIC RAM INSTALLER")
 print (50 * '-')
 print (50 * '#')
 time.sleep(1)
-print ("MIT License, v. 1.4")
+print ("MIT License, v. 1.5")
 time.sleep(1)
 print()
-
+print()
 
 def main():
     spinner = itertools.cycle(['-', '/', '|', '\\'])
@@ -40,6 +46,9 @@ def main():
           print("Installation Complete!")
           print()
           time.sleep(2.0)
+          print("You now have", ram, "of RAM installed.")
+          time.sleep(2.0)
+          print()
           print("You may want to hide those photos in the future")
           time.sleep(2.0)
           print()
@@ -47,3 +56,5 @@ def main():
           time.sleep(2.0)
           print()
 main()
+
+os.system('clear')

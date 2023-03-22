@@ -12,24 +12,17 @@ confinement: strict
 
 apps:
   magicraminstaller:
-    command: python3 $SNAP/bin/ram.py
+    command: bin/ram.py
      
 parts: 
   magicraminstaller:
     source: https://github.com/kz6fittycent/magicraminstaller
     source-type: git
     plugin: python
-    python-version: python3
     
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"    
-    
-    build-packages:
-      - python3
-      
-    stage-packages:
-      - python3
 
   publish:
     plugin: dump
